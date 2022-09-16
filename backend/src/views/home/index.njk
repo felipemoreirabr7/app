@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <title>Sgi Ceub</title>
+    {% endblock %}
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    
+
+</head>
+    <body>
+
+        {% include "parts/header.njk" %}
+
+        <link rel="stylesheet" href="styles/styles.css"/>
+
+        
+        <form  method="POST" action="/create">
+                    
+
+                <div class="container-create">
+                    <div class="header">
+                        <h3>Cadastrar Aula</h3>
+                    </div>
+
+
+                    <div class="fields">
+                        {% include "home/fields.njk" %}
+                    </div>
+                        
+                     <button class="button" type="submit">Salvar</button>
+                </div>
+                
+            </form>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<div class="container">
+
+
+{# <div class="item">
+            <div>Horario</div>
+            <div>
+                <select name="horario" >
+                    {% for horario in horarios %}
+                    <option>
+                    {{horario.horario}}
+                    </option>
+                    {% endfor %}
+                    
+                </select>
+            </div>
+</div> #}
+
+<div class="item">
+     <div>Horario</div>
+        <div>
+            <input 
+             type="text"
+            name="horario"
+            >
+        </div>
+</div>
+
+<div class="item">
+            <div>Dia</div>
+            <div>
+                <select name="dia" >
+                    {% for dia in dias %}
+                    <option>
+                    {{dia.name}}
+                    </option>
+                    {% endfor %}
+                    
+                </select>
+            </div>
+</div>
+
+<div class="item">
+            <div>Disciplina</div>
+            <div>
+                <select name="disciplina" >
+                    {% for disciplina in disciplinas %}
+                    
+                    
+                    <option>
+                    {{disciplina.name}}
+                    </option>
+                    
+                    {% endfor %}
+                    
+                </select>
+            </div>
+</div>
+
+
+<div class="item">
+            <div>Professor</div>
+            <div>
+                <select name="professor" >
+                    {% for professor in professores %}
+                    <option>
+                    {{professor.name}}
+                    </option>
+                    
+                    
+                    {% endfor %}
+                    
+                </select>
+            </div>
+</div>
+
+
+{# <div class="item">
+     <div>Professor</div>
+        <div>
+            <input 
+             type="text"
+            name="name"
+            placeholder="Digite o titulo do anuncio"
+            value ="{{product.name}}"
+            >
+        </div>
+</div> #}
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
